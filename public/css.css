@@ -1,33 +1,32 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);   
+  background: linear-gradient(to bottom right, #7bf2e9, #b65eba);
+  background-size: cover;
+  height: 500px;
+  width: 500px;   
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#preview{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);   
+  height: 400px;
+  width: 400px;   
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 7px solid rgb(51, 139, 255);
+  background-color:white;
+  margin: 0px auto;
+  overflow: scroll;
 
-    .preview{
-      position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);   
-        height: 700px;
-        width: 700px;   
-        border-radius: 10px;
-        padding: 15px;
-        text-align: center;
-        box-sizing: border-box;
-        border: 7px solid rgb(51, 139, 255);
-        background-color:white;
-        margin: 20px auto;
-        overflow: scroll;
-        padding: 20px;
-    }
-
-    .container {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);   
-        background: linear-gradient(to bottom right, #7bf2e9, #b65eba);
-        background-size: cover;
-        height: 500px;
-        width: 500px;   
-        border-radius: 10px;
-        padding: 15px;
-        text-align: center;
-        box-sizing: border-box;
   }
+#form-chat{
+  margin:380px auto;
+}
