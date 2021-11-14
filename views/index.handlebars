@@ -1,15 +1,20 @@
-
 <h1 style="text-align:center">Web Chat Online</h1>
 <div class="container">
-    
-    <div class="border-primary border" id="preview"></div>
-    <form id="form-chat">
-        <input style="width:300px" class="mt-5 border form-input" type="text" placeholder="Type message" required="required" />
-        <button class="btn btn-submit" type="submit" style="background-color: blue; border: 1px solid black;">Send</button>
-    </form>
+
+  <div class="border-primary border" id="preview"></div>
+  <form id="form-chat" name="form-chat">
+    <button type="reset" id="leave" name="leave" onClick="window.location.reload();">Leave</button>
+    <input style="width:300px" id="message" class="mt-5 border form-input" type="text" placeholder="Type message"
+      required="required" />
+
+    <button class="btn btn-submit" id="submit" value="submit" type="submit"
+      style="background-color: blue; border: 1px solid black;">Send</button>
+
+
+  </form>
 </div>
 
-<div class="modal" id="modal-username" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+<div class=" modal" id="modal-username" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog" role="document">
     <form class="modal-content" id="form-username">
       <div class="modal-header">
@@ -18,18 +23,21 @@
       <div class="modal-body">
         <div class="form-group">
           <label>Username</label>
-          <input class="form-control" type="text" required="required"/>
+          <input class="form-control" type="text" required="required" />
           <div class="invalid-feedback"></div>
         </div>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" type="submit">Save</button>
       </div>
+
     </form>
   </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script src="/app.js"></script>

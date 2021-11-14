@@ -5,7 +5,7 @@ const expressWS = require('express-ws')(app);
 const WsController = require('./controllers/ws-controller');
 
 app.engine('handlebars', expressHandlebars({
-	defaultLayout: 'main',
+    defaultLayout: 'main',
 }))
 
 app.set('views', './views');
@@ -15,6 +15,13 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('index');
 })
+// app.get('/info', (req, res) => {
+//     res.render('info');
+// })
+// app.post('/info', (req, res) => {
+//     res.render('/index');
+// })
+
 
 app.ws('/chat', WsController)
 
