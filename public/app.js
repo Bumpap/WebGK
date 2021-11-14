@@ -29,7 +29,7 @@ $(document).ready(function () {
     }
 
     if (data.method === 'update') {
-      $preview.append('<div>' + '<b>' + data.params.username + '</b>' + ':' + data.params.message + '</div>');
+      $preview.append('<div class="MessageUL">' + '<b>' + data.params.username + '</b>' + ':' + data.params.message + '</div>');
     }
   }
 
