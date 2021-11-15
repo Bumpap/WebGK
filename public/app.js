@@ -29,8 +29,12 @@ $(document).ready(function () {
     }
 
     if (data.method === 'update') {
+<<<<<<< HEAD
 
       $preview.append('<div>' + '<b>' + data.params.username + '</b>' + " " + formatAMPM(new Date) + '<br>' + data.params.message + '</div>');
+=======
+      $preview.append('<div class="MessageUL">' + '<b>' + data.params.username + '</b>' + ':' + data.params.message + '</div>');
+>>>>>>> 02868199421273d6ce7abc1aef206722a4efc468
     }
   }
 
