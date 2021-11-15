@@ -15,9 +15,9 @@
         }
 
         body{
-            background: linear-gradient(to bottom right, #7bf2e9, #b65eba);
+			background-image: url(/bg.jpg);
             margin:auto;
-            background-size: cover;
+            background-size: contain;
         }
 
 			.container {
@@ -25,8 +25,8 @@
 				left: 50%;
 				top: 50%;
 				transform: translate(-50%, -50%);   
-				background: linear-gradient(to bottom right, #7bf2e9, #b65eba);
-				background-size: cover;
+				background-image: url(/bg2.png);
+				background-size: contain;
 				height: 700px;
 				width: 700px;   
 				border-radius: 10px;
@@ -39,36 +39,43 @@
 				left: 50%;
 				top: 50%;
 				transform: translate(-50%, -50%);   
-				height: 90%;
-				width: 650px;   
+				height: 85%;
+				width: 95%;   
 				border-radius: 10px;
 				box-sizing: border-box;
-				border: 7px solid rgb(51, 139, 255);
+				border: 2px solid rgb(51, 139, 255);
 				background-color:white;
-				margin: 0px auto;
 				overflow: scroll;
+
 
   			}
 			#form-chat{
-				height: 10%;
-				width: 650px;
-				margin-top: 650px;
-				border-radius: 10px;
-				box-sizing: border-box;
+				position: absolute;
+				width: 95%;
+				left: 50%;
+				top: 98%;
+				transform: translate(-50%, -50%);   
+				padding-bottom: 10px;
+				display: flex
 			}
 
-			#input{
-				width: 80%;
+
+			#mesage,#input,#leave{
+				height: 100%;
+				vertical-align: middle;
 			}
 
-			#send{
-				width: 10%;
+			#message{
+				border-radius: 15px;
+				border: solid 2px blue;
+				width: 532px;
 			}
 
-			#leave{
-				width: 10%;
+			#input,#leave{
+				width: 66px;
 			}
-			}
+
+	
 		</style>
 	</head>
 	<body>

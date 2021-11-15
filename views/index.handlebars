@@ -1,16 +1,17 @@
 <h1 style="text-align:center">Web Chat Online</h1>
 <div class="container">
 
-  <div class="border-primary border" id="preview"></div>
+  <div id="preview"></div>
   <form id="form-chat" name="form-chat">
-    
-    <input style="width:300px" id="message" class="mt-5 border form-input" type="text" placeholder="Type message"
+    <div class="MessageUL">
+      <input id="message" type="text" placeholder="Type message"
       required="required" />
 
-    <button class="btn btn-submit" id="submit" value="submit" type="submit"
-      style="background-color: blue; border: 1px solid black;">Send</button>
+    <button id="submit" value="submit" type="submit">Send</button>
 
     <button type="reset" id="leave" name="leave" onClick="window.location.reload();">Leave</button>
+    </div>
+    
 
 
   </form>
