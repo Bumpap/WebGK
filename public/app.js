@@ -30,7 +30,8 @@ $(document).ready(function () {
 
     if (data.method === 'update') {
 
-      $preview.append('<div class="MessageLine">' + '<b>' + data.params.username + '</b>' + " " + formatAMPM(new Date) + '<br>' + data.params.message + '</div>');
+      $preview.append('<div class="MessageName">' + '<b>' + data.params.username + '</b>' + " " + '<p>' + formatAMPM(new Date) + '</p>'  + '</div>');
+      $preview.append('<div class="MessageLine">' + data.params.message + '</div>');
     }
   }
 

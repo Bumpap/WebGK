@@ -35,12 +35,8 @@
 				box-sizing: border-box;
 			}
 			#preview{
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);   
-				height: 85%;
-				width: 95%;   
+				height: 90%;
+				width: 100%;   
 				border-radius: 10px;
 				box-sizing: border-box;
 				border: 2px solid rgb(51, 139, 255);
@@ -50,18 +46,16 @@
 
   			}
 			#form-chat{
-				position: absolute;
-				width: 95%;
-				left: 50%;
-				top: 98%;
-				transform: translate(-50%, -50%);   
-				padding-bottom: 10px;
-				display: flex
+				width: 100%;
+				margin-top: 15px;
+			}
+
+			.tableformchat{
+				height: 100%;
 			}
 
 
-			#mesage,#input,#leave{
-				height: 100%;
+			#mesage,#submit,#leave{
 				vertical-align: middle;
 			}
 
@@ -71,10 +65,41 @@
 				width: 532px;
 			}
 
-			#input,#leave{
-				width: 66px;
+			#submit{
+				width: 65px;
 			}
 
+
+			.MessageName{
+				text-align: left;
+				color: red;
+				margin-left: 5px;
+				font-weight: bold;
+				font-family:  Arial, Helvetica, sans-serif;
+				float: left;
+				clear: both;
+				font-size: large;
+			}
+
+			.MessageName p{
+				display: inline;
+				font-weight: normal;
+				color: gray;
+			}
+
+			.MessageLine{
+				text-align: left;
+				padding: 5px;
+				margin: 0 0 5px 5px;
+				border: 1px solid green;
+				background-color: rgb(55, 204, 35);
+				color: white;
+				width: fit-content;
+				border-radius: 7px;
+				font-family:  Arial, Helvetica, sans-serif;
+				float: left;
+				clear: both;
+			}
 	
 		</style>
 	</head>

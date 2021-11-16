@@ -1,19 +1,26 @@
 <h1 style="text-align:center">Web Chat Online</h1>
 <div class="container">
-
+  
   <div id="preview"></div>
   <form id="form-chat" name="form-chat">
-    <div class="MessageUL">
-      <input id="message" type="text" placeholder="Type message"
-      required="required" />
-
-    <button id="submit" value="submit" type="submit">Send</button>
-
-    <button type="reset" id="leave" name="leave" onClick="window.location.reload();">Leave</button>
+    <table class="tableformchat">
+      <tr>
+        <th>
+          <div class="MessageUL"><input id="message" type="text" placeholder="Type message"required="required" />
+        </th>
+        
+        <th>
+          <button id="submit" class="btn btn-success" value="submit" type="submit">Send</button>
+        </th>
+        
+        <th>
+          <button type="reset" class="btn btn-danger" id="leave" name="leave" onClick="window.location.reload();">Leave</button>
+        </th>
+       
     </div>
+      </tr>
+    </table>
     
-
-
   </form>
 </div>
 
