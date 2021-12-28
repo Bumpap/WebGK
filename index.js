@@ -15,15 +15,6 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('index');
 })
-// app.get('/info', (req, res) => {
-//     res.render('info');
-// })
-// app.post('/info', (req, res) => {
-
-//     var temp = req.body.username;
-//     res.send(temp);
-// })
-
 
 app.ws('/chat', WsController)
 

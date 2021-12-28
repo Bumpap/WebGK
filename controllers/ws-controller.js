@@ -36,7 +36,6 @@ module.exports = (ws, req) => {
                         ws: ws,
                     });
                     send(ws, { id: data.id, result: { status: 'success' } });
-
                 }
                 //store user with select username
                 break;
@@ -45,38 +44,18 @@ module.exports = (ws, req) => {
                 const username = users.find(user => user.ws == ws).username;
                 users.forEach(user => {
                     send(user.ws, { method: 'update', params: { message: data.params.message, username: username } });
-
-
                 })
-                // console.log(data.params.message)
-                // data.params.message = ''
-                // console.log(data.params.message)
                 break;
             case 'popup':
-                // send message to all connect user
-                //const username = users.find(user => user.ws == ws).username;
                 users.forEach(user => {
                     send(user.ws, { method: 'update', params: { message: data.params.message, username: "Chatbot" } });
-
-
                 })
-                // console.log(data.params.message)
-                // data.params.message = ''
-                // console.log(data.params.message)
                 break;
             case 'leave':
-                // send message to all connect user
-                //const username = users.find(user => user.ws == ws).username;
                 users.forEach(user => {
                     send(user.ws, { method: 'update', params: { message: data.params.message, username: "Chatbot" } });
-
-
                 })
-                // console.log(data.params.message)
-                // data.params.message = ''
-                // console.log(data.params.message)
                 break;
-
         }
     })
 }
